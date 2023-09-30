@@ -1,0 +1,41 @@
+/* Add root variables */
+:root {
+    --color-primary: #1a1a1d;
+    --color-secondary: #c3073f;
+    --color-dark-red: #6f2232;
+    --color-lighter-red: #950740;
+    --color-gray: #c9c9c9;
+
+    --font-primary: 'Rubik', sans-serif;
+}
+
+@font-face {
+    font-family: 'Rubik';
+    src: url(../fonts/Rubik-VariableFont_wght.ttf) format('truetype');
+}
+
+* {
+    font-family: var(--font-primary);
+}
+
+h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6 {
+     margin: 8px;
+     text-shadow: 1px 2px 2px var(--color-primary);
+ }
+
+ h1,
+ h3,
+ h5 {
+     color: var(--color-secondary);
+ }
+
+ h2,
+ h4,
+ h6 {
+     color: var(--color-primary);
+ }

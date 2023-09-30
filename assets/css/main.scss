@@ -1,0 +1,10 @@
+// Variable overrides first
+$primary: #1a1a1d;
+$info: #c3073f;
+$warning: #6f2232;
+$danger: #950740;
+$secondary: #c9c9c9;
+$enable-shadows: true;
+
+// Then import Bootstrap
+@import "../css/node_modules/bootstrap/scss/bootstrap.scss";
