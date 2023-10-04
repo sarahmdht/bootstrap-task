@@ -42,7 +42,7 @@
   --bs-warning: #6f2232;
   --bs-danger: #950740;
   --bs-light: #f8f9fa;
-  --bs-dark: #212529;
+  --bs-dark: #ffffff;
   --bs-primary-rgb: 26, 26, 29;
   --bs-secondary-rgb: 201, 201, 201;
   --bs-success-rgb: 25, 135, 84;
@@ -4347,8 +4347,8 @@ textarea.form-control-lg {
 
 .navbar-dark,
 .navbar[data-bs-theme=dark] {
-  --bs-navbar-color: rgba(255, 255, 255, 0.55);
-  --bs-navbar-hover-color: rgba(255, 255, 255, 0.75);
+  --bs-navbar-color: #fff;
+  --bs-navbar-hover-color: #fff;
   --bs-navbar-disabled-color: rgba(255, 255, 255, 0.25);
   --bs-navbar-active-color: #fff;
   --bs-navbar-brand-color: #fff;
