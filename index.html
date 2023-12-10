@@ -62,8 +62,9 @@
             <div class="col-6 d-flex flex-column justify-content-start align-self-center">
                 <h1 class="fw-bold text-info">Sara Medhat</h1>
                 <h2 class="fw-bold">Front-End Developer</h2>
-                <p>Junior front end developer who can make your elegant design into a real websites</p>
-                <button type="button" class=" col-3 btn btn-info btn-default">Read More</button>
+                <!-- <p>Junior front end developer who can make your elegant design into a real websites</p> -->
+                <div id="jsNodeAppend"></div>
+                <button type="button" id="readMore" class=" col-3 btn btn-info btn-default">Read More</button>
             </div>
             <div class="col-6">
                 <img src="assets/images/welcome-img.png" alt="welcoming picture" height="350" class="d-block mx-auto">
@@ -163,10 +164,10 @@
         <h2 class="text-info text-center pt-5"> Contact Us</h2>
         <h3 class="text-center"> Send a message to me</h3>
 
-        <form class="w-50 mx-auto mt-5 d-flex flex-column ">
+        <form class="w-50 mx-auto mt-5 d-flex flex-column " name="contactForm" onsubmit="return validateForm()" method="post">
             <div class="input-group mb-3">
                 <span class="input-group-text">Name</span>
-                <input type="text" class="form-control" placeholder="Full Name *" required>
+                <input type="text" class="form-control" name="fullName" placeholder="Full Name *">
                 <div class="valid-feedback">Valid.</div>
                 <div class="invalid-feedback">Please fill out this field.</div>
             </div>
@@ -179,7 +180,7 @@
             </div>
 
             <div class="form-floating mb-3">
-                <label for="comment">Comments</label>
+                <label for="comment">Comment</label>
                 <textarea class="form-control" id="comment" name="text" rows="10"
                     placeholder="Comment goes here"></textarea>
                 <div class="valid-feedback">Valid.</div>
@@ -242,6 +243,9 @@
         </div>
     </div>
     <!-- footer section end -->
+
+    <!-- linking with javascript file  -->
+    <script src="./assets/JS/scripts.js"></script>
 
 </body>
 
